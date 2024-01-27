@@ -41,7 +41,7 @@ for index in range (3, 27):
     #if the situation is "Exame Final"
     if situation == "Exame Final":
         naf = 100 - m
-        final_approval_grade = (m + naf)/2
+        final_approval_grade = round((m + naf)/2)
         sheet.update_cell(index + 1, 8, final_approval_grade) #fill column 8 with the final approval grade
     else:
         sheet.update_cell(index + 1, 8, 0) #fill column 8 with the number 0
